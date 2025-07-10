@@ -13,13 +13,11 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid #000000;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-p {
-    padding: 0;
-}
+p { padding: 0;}
 main {
     max-width: 840px;
 }
