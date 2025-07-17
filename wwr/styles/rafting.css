@@ -83,3 +83,7 @@ nav, p, section, article {
     height: 24px;
     margin: 0 2px; 
 }
+footer {
+  text-align: center;
+}
+
