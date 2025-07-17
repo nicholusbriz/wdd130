@@ -6,43 +6,52 @@
     --heading-font: "Bebas Neue", sans-serif;
     --body-font: "Josefin sans", sans-serif; 
 }
+
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
+
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
+
 .socialmedia a {
     text-decoration: none;
 }
 .hero {
     position: relative;
 }
+
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
-h1 {
+
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -52,10 +61,23 @@ h1 {
     background-color: var(--accent1-color);
     color: #fff;
 }
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12px;
+    max-width: 300px;
+    color: var(--accent2-color);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
 .hero article img {
     float: right;
     width: 125px;
 }
+
 .socialmedia a img {
     width: 24px; 
     height: 24px;
