@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us | Send us a message | Down Rafting Company</title>
+  <meta name="description" content="Meet our team, Contact us by sending us a message">
+  <meta name="author" content="Nicholus Turyamureba">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Down River Rafting Company Logo">
+    <nav>
+      <a href="http://127.0.0.1:54117/index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="site-plan.html">Site Plan</a>
+      <a href="images/profile.jpg">Profile Image</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Down River Rafting Company</h1>
+
+    <section class="contact">
+      <p><span>Address</span> Freedom City, Namasuba, Zana, Kampala, Uganda</p>
+      <p><span>Tel-Phone-number</span> +256761996296 / +256706873267</p>
+      <p><span>Email</span> turyamurebanicholus@gmail.com</p>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120966.2333023803!2d32.66637683701586!3d0.27991306818604916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1753972190564!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="images">
+      <figure>
+        <img src="images/adventure5.webp" alt="Smiling employee named Grace" />
+        <figcaption>Grace – Lead Designer</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/adventure2.webp" alt="Happy developer named Malik" />
+        <figcaption>Malik – Front-End Developer</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/adventure3.webp" alt="Joyful marketer named Fiona" />
+        <figcaption>Fiona – Marketing Strategist</figcaption>
+      </figure>
+    </section>
+
+    <section class="contact-form">
+      <form action="/submit" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email Address:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <p>Purpose of Your Message:</p>
+        <label><input type="radio" name="purpose" value="General Inquiry" required /> General Inquiry</label><br />
+        <label><input type="radio" name="purpose" value="Reservation Question" /> Reservation Question</label><br />
+        <label><input type="radio" name="purpose" value="Website Suggestion" /> Website Suggestion</label><br /><br />
+
+        <label for="message">Your Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+        <label>
+          <input type="checkbox" name="subscribe" />
+          Please subscribe me to the monthly newsletter
+        </label><br /><br />
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="images/adventure4.webp" target="_blank">View Contact Us Wireframe</a>
+    </p>
+    <p>© 2025 | Down River Rafting Company | Nicholus Turyamureba</p>
+    <nav class="socialmedia">
+      <a href="https://www.facebook.com/nicholus.briz.5/">
+        <img src="images/facebook.jpeg" alt="Visit our Facebook page">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.jpeg" alt="Follow us on Twitter">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.jpeg" alt="Check our Instagram">
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>
