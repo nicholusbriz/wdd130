@@ -1,0 +1,86 @@
+:root {
+  --body-font: 'Inter', sans-serif;
+  --heading-font: 'Libre Baskerville', serif;
+  --accent1: #f5f5f5;
+  --accent2: #ffffff;
+  --border-color: #cccccc;
+  --text-color: #333333;
+  --heading-color: #222222;
+  --button-bg: #e0e0e0;
+  --button-hover: #d5d5d5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  background-color: var(--accent1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--text-color);
+}
+
+.quiz-card {
+  background-color: var(--accent2);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--heading-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid var(--border-color);
+  background-color: var(--accent2);
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  font-family: var(--body-font);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button[type="submit"] {
+  padding: 0.7rem;
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}

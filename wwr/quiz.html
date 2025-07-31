@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Dev Quiz</title>
+  <link rel="stylesheet" href="styles/quiz.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="quiz-card">
+    <h1>HTML/CSS Quiz</h1>
+
+    <form>
+      <div class="question">
+        <label for="q1">1. What does HTML stand for?</label>
+        <input type="text" name="q1" id="q1" required />
+      </div>
+
+      <div class="question">
+        <label for="q2">2. Which CSS property changes text color?</label>
+        <textarea name="q2" id="q2" required></textarea>
+      </div>
+
+      <div class="question">
+        <label for="q3">3. What's the default display value for &lt;div&gt;?</label>
+        <select name="q3" id="q3" required>
+          <option value="" disabled selected>Choose One ...</option>
+          <option value="block">block</option>
+          <option value="inline">inline</option>
+          <option value="flex">flex</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label for="q4">4. Enter a number (e.g., how many HTML elements can be block-level?):</label>
+        <input type="number" name="q4" id="q4" required />
+      </div>
+
+      <button type="submit">Submit Quiz</button>
+    </form>
+  </main>
+</body>
+</html>
