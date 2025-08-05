@@ -39,9 +39,12 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-family: var(--heading-font);
-    font-size: 1.5rem;
+    font-size: 2rem;
     border-radius: 4px;
     padding: 5px 10px;
+}
+nav a:hover {
+    color: #FF6B35;
 }
 
 body {
@@ -92,6 +95,7 @@ h1, h2 {
 
 .hero h1 {
     position: absolute;
+    margin: 0 auto;
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -109,8 +113,8 @@ h1, h2 {
 
 .hero article {
     position: absolute;
-    top: 100px;
-    left: 20px;
+    top: 120px;
+    left: 50px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 16px;
     max-width: 80%;
@@ -302,7 +306,9 @@ figcaption {
 
 footer p a {
     color: white;
-}
+    font-size: 1.2rem;
+    padding: 5px;
+} 
 
 #map-frame {
     width: 100%;
@@ -310,4 +316,217 @@ footer p a {
     height: 450px;
     border: none;
     border-radius: 6px;
+}
+/* index.html*/
+.news {
+    background-color: #e9c5c5;
+    margin: 20px 30px;
+    padding: 20px;
+    display: block;
+}
+.newsletter{
+    margin: 10px;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+.newsletter ::placeholder {
+    text-align: center;
+    color: #ee8013;
+}
+.checkbox {
+    text-align: right;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.down p {
+    font-style: italic;
+    color: #466995;
+    margin: 10px;
+}
+.down a {
+    margin-left: 15rem;
+    background-color: #d1ebe9;
+    color: #5419df;
+    font-size: 2rem;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.down a:hover {
+    color: #7D4600;
+}
+.photos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+/*trips.html*/
+.trip-hero {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Trip Grid */
+.trip-showcase {
+    padding: 2rem;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.trip-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-10px);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-info {
+    padding: 1.5rem;
+}
+
+.trip-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.difficulty {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: #FF6B35;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+/*Table */
+.trip-comparison {
+    padding: 2rem;
+    background: #f8f8f8;
+    margin: 3rem 0;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #2A3F54;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-cta {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #4ECDC4;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.table-cta:hover {
+    background: #3DBBB2;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #FF6B35;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background: #E55C2B;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-cta {
+    text-align: center;
+    padding: 3rem;
+    background: #2A3F54;
+    color: white;
+}
+
+.cta-button-secondary {
+    display: inline-block;
+    padding: 12px 24px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
 }

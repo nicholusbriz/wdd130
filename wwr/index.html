@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Turyamureba Nicholus | WDD 130</title>
+    <title>Home page | Turyamureba Nicholus | WDD 130</title>
     <meta name="description" content="Turyamureba Nicholus WDD 130 course homepage. Learn about rafting, HTML, and web development skills.">
     <meta name="author" content="Nicholus Turyamureba">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,9 +18,8 @@
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="https://nicholusbriz.github.io/wdd130/wwr/contact.html">Contact Us</a>
-            <a href="site-plan.html">Site Plan</a>
-            <a href="images/profile.jpg">Profile Image</a>
+            <a href="contact.html">Contact Us</a>
+ 
         </nav>
     </header>
     <main>
@@ -34,20 +33,67 @@
             </article>
         </div>
         
+        <section class="news"> 
+            <form>
+                <fieldset>
+                    <div class="newsletter">
+                    <legend>Fill in the information below:</legend>
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="required" required><br>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="required" required><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="@gmail.com"><br>
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="number" id="phonenumber" name="phonenumber" placeholder="required">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox" name="checkbox">
+                        <label for="checkbox">Subscribe to promotions</label>
+                    </div>
+                    <div class="down">
+                        <p>Ready for adventure? Explore our thrilling trips now!</p>
+                        <a href="trips.html">View Trips</a>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <div class="photos">
+                <aside>
+                    <img src="images/adventure2.webp" alt="Rafting site photo">
+                        <h2>Thrilling Adventures Await!</h2>
+                        <p>
+At Down River Rafting, we specialize in heart-pounding whitewater adventures for thrill-seekers and nature lovers alike. Navigate Uganda’s wildest rapids with our expert guides, who ensure safety while delivering an unforgettable adrenaline rush. Whether you’re a first-time rafter or a seasoned pro, our trips—like the legendary Nile Expedition or Whitewater Challenge—offer something for everyone. Dive into crystal-clear waters, soak in breathtaking scenery, and bond with your team as you conquer the river’s twists and turns.
+                        </p>
+                </aside>
+                <aside>
+                    <img src="images/adventure5.webp" alt="">
+                    <h2>More than just rapids</h2>
+                    <p>
+                        Beyond the adventure, we’re committed to sustainability and community. Our eco-friendly practices protect the rivers we love, and every trip supports local conservation efforts. After your ride, unwind at our riverside camp with fresh Ugandan cuisine and stories around the fire. Families, corporate groups, and solo travelers all find a home here—where every rapid tells a story, and every journey builds memories. Ready to ride? Your adventure starts now!
+                    </p>
+                </aside>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <p>© 2025 | Down River Rafting Company | Nicholus Turyamureba</p>
-        <nav class="socialmedia">
-            <a href="https://www.facebook.com/nicholus.briz.5/">
-                <img src="images/facebook.jpeg" alt="Visit our Facebook page">
-            </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.jpeg" alt="Follow us on Twitter">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.jpeg" alt="Check our Instagram">
-            </a>
-        </nav>
-    </footer>
+<footer>
+    <p>
+      <a href="images/index.drawio.html" target="_blank"> Home page Wireframe</a>
+    </p>
+    <p>© 2025 | Down River Rafting Company | Nicholus Turyamureba</p>
+    <nav class="socialmedia">
+      <a href="https://www.facebook.com/nicholus.briz.5/">
+        <img src="images/facebook.jpeg" alt="Visit our Facebook page">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.jpeg" alt="Follow us on Twitter">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.jpeg" alt="Check our Instagram">
+      </a>
+    </nav>
+</footer>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Turyamureba Nicholus | WDD 130</title>
-    <meta name="description" content="Turyamureba Nicholus WDD 130 course homepage. Learn about rafting, HTML, and web development skills.">
+    <title>Trips | Down River Rafting Company</title>
+    <meta name="description" content="Explore our exciting rafting trips at Down River Rafting Company. Book your adventure today!">
     <meta name="author" content="Nicholus Turyamureba">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,25 +18,136 @@
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="https://nicholusbriz.github.io/wdd130/wwr/contact.html">Contact Us</a>
-            <a href="site-plan.html">Site Plan</a>
-            <a href="images/profile.jpg">Profile Image</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
-    
+        <section class="trip-hero">
+            <div class="hero-image">
+                <img src="images/adventure5.webp" alt="Exciting white water rafting">
+            </div>
+            <div class="hero-content">
+                <h1>Your Adventure Awaits</h1>
+                <p>Ready to conquer the rapids? Our expert guides will customize your perfect river experience.</p>
+                <a href="contact.html" class="cta-button">Book Your Trip Now</a>
+            </div>
+        </section>
+
+        <section class="trip-showcase">
+            <h2>Featured Adventures</h2>
+            <div class="trip-grid">
+                <!-- Trip 1 -->
+                <article class="trip-card">
+                    <img src="images/adventure4.webp" alt="Nile Expedition rafting">
+                    <div class="trip-info">
+                        <h3>Nile Expedition</h3>
+                        <p>3-day wildwater challenge through Class IV-V rapids with overnight riverside camping.</p>
+                        <ul>
+                            <li>Professional guides</li>
+                            <li>All equipment provided</li>
+                            <li>Meals included</li>
+                        </ul>
+                        <span class="difficulty">Advanced</span>
+                    </div>
+                </article>
+
+                <!-- Trip 2 -->
+                <article class="trip-card">
+                    <img src="images/adventure1.webp" alt="Family rafting trip">
+                    <div class="trip-info">
+                        <h3>Family Float</h3>
+                        <p>Gentle 4-hour introduction to rafting perfect for beginners and children ages 8+.</p>
+                        <ul>
+                            <li>Class I-II rapids</li>
+                            <li>Safety orientation</li>
+                            <li>Scenic river views</li>
+                        </ul>
+                        <span class="difficulty">Beginner</span>
+                    </div>
+                </article>
+
+                <!-- Trip 3 -->
+                <article class="trip-card">
+                    <img src="images/adventure3.webp" alt="Extreme rafting challenge">
+                    <div class="trip-info">
+                        <h3>Extreme Challenge</h3>
+                        <p>Full-day adrenaline rush tackling the most technical rapids in the region.</p>
+                        <ul>
+                            <li>Class V rapids</li>
+                            <li>Video package included</li>
+                            <li>Post-trip celebration</li>
+                        </ul>
+                        <span class="difficulty">Expert</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="trip-comparison">
+            <h2>Compare All Adventures</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Trip</th>
+                            <th>Duration</th>
+                            <th>Difficulty</th>
+                            <th>Minimum Age</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nile Expedition</td>
+                            <td>3 days</td>
+                            <td>Advanced</td>
+                            <td>16</td>
+                            <td>$450</td>
+                            <td><a href="contact.html" class="table-cta">Inquire</a></td>
+                        </tr>
+                        <tr>
+                            <td>Family Float</td>
+                            <td>4 hours</td>
+                            <td>Beginner</td>
+                            <td>8</td>
+                            <td>$75</td>
+                            <td><a href="contact.html" class="table-cta">Book</a></td>
+                        </tr>
+                        <tr>
+                            <td>Extreme Challenge</td>
+                            <td>8 hours</td>
+                            <td>Expert</td>
+                            <td>18</td>
+                            <td>$220</td>
+                            <td><a href="contact.html" class="table-cta">Inquire</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secondary-cta">
+            <h3>Need Help Choosing Your Adventure?</h3>
+            <p>Our rafting specialists are standing by to help you plan the perfect trip.</p>
+            <a href="contact.html" class="cta-button-secondary">Contact Our Team</a>
+        </section>
     </main>
+
     <footer>
+        <p>
+            <a href="images/trips.drawio.html" target="_blank">Trips Wireframe</a>
+        </p>
         <p>© 2025 | Down River Rafting Company | Nicholus Turyamureba</p>
         <nav class="socialmedia">
             <a href="https://www.facebook.com/nicholus.briz.5/">
-                <img src="images/facebook.jpeg" alt="Visit our Facebook page">
+                <img src="images/facebook.jpeg" alt="Facebook">
             </a>
             <a href="https://twitter.com">
-                <img src="images/twitter.jpeg" alt="Follow us on Twitter">
+                <img src="images/twitter.jpeg" alt="Twitter">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.jpeg" alt="Check our Instagram">
+                <img src="images/instagram.jpeg" alt="Instagram">
             </a>
         </nav>
     </footer>
