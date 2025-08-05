@@ -1,40 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turyamureba Nicholus | WDD 130</title>
-    <meta name="description" content="Turyamureba Nicholus WDD 130 course homepage">
-    <meta name="author" content="Turyamureba Nicholus">
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home page | Turyamureba Nicholus | WDD 130</title>
+    <meta name="description" content="Turyamureba Nicholus WDD 130 course homepage. Learn about rafting, HTML, and web development skills.">
+    <meta name="author" content="Nicholus Turyamureba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
+        <img src="images/logo.png" alt="Down River Rafting Company Logo">
         <nav>
-            <a href="#">Home</a>
-            <a href="http://127.0.0.1:5500/wwr/about.html">Rafting Website</a>  
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    <div class="grid">
-        <main>
-            <h1>Turyamureba Nicholus - WDD 130</h1>
-            <img src="images/profile.jpg" width="200" alt="Turyamureba Nicholus profile photo">
-            <p>Hello! My name is Nicholus Turyamureba, and I’m a passionate software developer in the making. Based in Uganda—a country blessed with breathtaking landscapes, rich wildlife, and thrilling outdoor adventures—I’m on an exciting journey into the world of technology.
+    <main>
+        <div class="hero">
+            <img src="images/rafting_image.webp" alt="Exciting whitewater rafting adventure on the Colorado River">
+            <h1>Down River Rafting Company</h1>
+            <article>
+                <h2>Our Mission</h2>
+                <img src="images/small_rafting_image.jpg" alt="Happy clients enjoying a rafting trip">
+                <p>"To unlock the transformative power of wild rivers—where fear becomes courage, strangers become crew, and ordinary days become legendary stories."</p>
+            </article>
+        </div>
+        
+        <section class="news">
+            <form>
+                <fieldset>
+                    <legend>Fill in the information below:</legend>
+                    <div class="newsletter">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="required" required><br>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="required" required><br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="@gmail.com"><br>
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="number" id="phonenumber" name="phonenumber" placeholder="required">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox" name="checkbox">
+                        <label for="checkbox">Subscribe to promotions</label>
+                    </div>
+                    <div class="down">
+                        <p>Ready for adventure? Explore our thrilling trips now!</p>
+                        <a href="trips.html">View Trips</a>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
 
-Currently, I’m honing my skills in web development, diving deep into HTML, CSS, and JavaScript to create engaging and functional websites. Every line of code I write brings me closer to my goal of building digital solutions that make an impact.
+        <section>
+            <div class="photos">
+                <aside>
+                    <img src="images/adventure2.webp" alt="Rafting site photo">
+                    <h2>Thrilling Adventures Await!</h2>
+                    <p>At Down River Rafting, we specialize in heart-pounding whitewater adventures for thrill-seekers and nature lovers alike. Navigate Uganda's wildest rapids with our expert guides, who ensure safety while delivering an unforgettable adrenaline rush. Whether you're a first-time rafter or a seasoned pro, our trips—like the legendary Nile Expedition or Whitewater Challenge—offer something for everyone. Dive into crystal-clear waters, soak in breathtaking scenery, and bond with your team as you conquer the river's twists and turns.</p>
+                </aside>
+                <aside>
+                    <img src="images/adventure5.webp" alt="Rafting adventure scenery">
+                    <h2>More than just rapids</h2>
+                    <p>Beyond the adventure, we're committed to sustainability and community. Our eco-friendly practices protect the rivers we love, and every trip supports local conservation efforts. After your ride, unwind at our riverside camp with fresh Ugandan cuisine and stories around the fire. Families, corporate groups, and solo travelers all find a home here—where every rapid tells a story, and every journey builds memories. Ready to ride? Your adventure starts now!</p>
+                </aside>
+            </div>
+        </section>
+    </main>
 
-But my interests don’t stop at coding! Uganda’s natural beauty has also inspired my love for adventure. If you’re into rafting, hiking, or exploring the wild, check out my rafting website to discover some of the best adrenaline-pumping experiences my country has to offer. Whether you're a local or a traveler, there’s always an adventure waiting!
-
-Let’s connect—whether it’s about tech, web development, or outdoor adventures—I’d love to hear from you!</p>
-        </main>
-        <aside>
-            <h2>Uganda</h2>
-            <img src="images/ugandamap.webp" alt="Map of Uganda">
-            <p>Uganda, famously called 'The Pearl of Africa,' is a land of breathtaking diversity. From the mist-covered mountains of Bwindi, home to endangered mountain gorillas, to the roaring Nile River at Murchison Falls, this country is a paradise for nature lovers.</p>
-        </aside>
-    </div>
     <footer>
-        <p>&copy; 2025 | Turyamureba Nicholus | Kampala, Uganda</p>
+        <p><a href="images/index.drawio.html" target="_blank">Home page Wireframe</a></p>
+        <p>© 2025 | Down River Rafting Company | Nicholus Turyamureba</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/nicholus.briz.5/">
+                <img src="images/facebook.jpeg" alt="Visit our Facebook page">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.jpeg" alt="Follow us on Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpeg" alt="Check our Instagram">
+            </a>
+        </nav>
     </footer>
 </body>
 </html>
